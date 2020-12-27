@@ -1,0 +1,7 @@
+seq 30 | parallel -n0 --delay 2 --ungroup --jobs 30 python3 run_lqg_experiment.py --logdir log/lqg_std0.15 --exp_name ucb1 --algorithm ucb1 --policy_std 0.15
+seq 30 | parallel -n0 --delay 2 --ungroup --jobs 30 python3 run_lqg_experiment.py --logdir log/lqg_std0.15 --exp_name gpucb --algorithm gpucb --policy_std 0.15
+seq 30 | parallel -n0 --delay 2 --ungroup --jobs 30 python3 run_lqg_experiment.py --logdir log/lqg_std0.15 --exp_name optimist --algorithm optimist --policy_std 0.15
+seq 30 | parallel -n0 --delay 2 --ungroup --jobs 30 python3 run_lqg_experiment.py --logdir log/lqg_std0.15 --exp_name randomist_1.1 --algorithm randomist --pseudo_rewards_per_timestep 1.1 --policy_std 0.15
+seq 30 | parallel -n0 --delay 2 --ungroup --jobs 30 python3 run_lqg_experiment.py --logdir log/lqg_std0.15 --exp_name randomist_th --algorithm randomist --pseudo_rewards_per_timestep 8.1 --policy_std 0.15
+seq 30 | parallel -n0 --delay 2 --ungroup --jobs 30 python3 run_lqg_experiment.py --logdir log/lqg_std0.15 --exp_name gaussian --algorithm gaussian --policy_std 0.15
+seq 30 | parallel -n0 --delay 2 --ungroup --jobs 30 python3 run_lqg_experiment.py --logdir log/lqg_std0.15 --exp_name phe_th --algorithm phe --pseudo_rewards_per_timestep 2.1 --policy_std 0.15
