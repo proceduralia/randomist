@@ -1,8 +1,18 @@
-Code for _Policy Optimization as Online Learning with Mediator Feedback_
+# Policy Optimization as Online Learning with Mediator Feedback
+```
+@inproceedings{randomist,
+  author    = {Alberto Maria Metelli and
+               Matteo Papini and
+               Pierluca D'Oro and
+               Marcello Restelli},
+  title     = {Policy Optimization as Online Learning with Mediator Feedback},
+  booktitle = {The Thirty-Fifth {AAAI} Conference on Artificial Intelligence, {AAAI} 2021}
+}
+```
 
 ## Installation
 We mainly use pytorch and numpy as linear algebra libraries.
-Run `pip install -r requirements.txt`, preferably on a clean environment, to install al the required packages.
+Run `pip install -r requirements.txt`, preferably on a clean environment, to install all the required packages.
 
 ## Code structure
 The structure of the repository is the following:
@@ -14,7 +24,7 @@ utils.py
 ...
 ```
 The `algorithms/` directory contains scripts with classes for each algorithm.
-Some of them, that feature semantic similarity, are grouped together (OPTIMIST and FTL, PHE and the discrete version of RANDOMIST).
+Some of them, are grouped together (OPTIMIST and FTL, PHE and the discrete version of RANDOMIST).
 `algorithms/randomist.py` and `algorithms/discrete.py` contain the abstract classes instantiated by the other algorithms to perform policy optimization with a discrete number of policies, with and without importance sampling.
 
 ## How to run experiments
